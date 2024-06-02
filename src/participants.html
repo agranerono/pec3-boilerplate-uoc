@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Participantes - Culinary Masters</title>
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss">
+    <link rel="icon" type="image/png" href="./assets/images/favicon.png">
+</head>
+<body class="font-sans bg-background text-black">
+    <div class="header bg-primary">
+        <include src="./views/header.html"></include>
+    </div>
+    <div class="container mx-auto my-10 text-center max-w-[1300px]">
+        <h1 class="text-4xl font-bold text-secondary py-8">Conoce a los Chefs <i class="fas fa-utensils"></i></h1>
+        <div class="flex flex-wrap justify-around gap-2">
+            <include src="./views/card.html" locals='{"image": "05.png", "name": "Santiago Ramirez", "description": "Con una pasión por la cocina mediterránea, Santiago ha dedicado más de 15 años a perfeccionar sus recetas de paella y tapas. Su enfoque está en ingredientes frescos y técnicas auténticas."}'></include>
+            <include src="./views/card.html" locals='{"image": "02.png", "name": "Amelia Laurent", "description": "Especialista en pastelería francesa, Amelia crea obras de arte comestibles. Sus macarons y tartas son famosos en la ciudad por su equilibrio perfecto entre belleza y sabor."}'></include>
+            <include src="./views/card.html" locals='{"image": "03.png", "name": "Hiro Tanaka", "description": "Hiro es un maestro de la cocina japonesa tradicional. Con énfasis en el sushi y el ramen, su meticulosa atención al detalle se refleja en cada plato que sirve."}'></include>
+            <include src="./views/card.html" locals='{"image": "01.png", "name": "Isabella Fischer", "description": "Isabella se destaca en la cocina fusión ítalo-argentina, combinando las mejores carnes de Argentina con las pastas clásicas italianas. Sus platos son tanto innovadores como reconfortantes."}'></include>
+            <include src="./views/card.html" locals='{"image": "06.png", "name": "Rajesh Singh", "description": "Rajesh es conocido por su excepcional habilidad en la cocina india. Desde currys ricos y complejos hasta samosas perfectamente crujientes, su comida es una celebración de los sabores intensos."}'></include>
+            <include src="./views/card.html" locals='{"image": "04.png", "name": "Caroline Dubois", "description": "Caroline ha revolucionado la cocina vegetariana, utilizando ingredientes orgánicos y técnicas modernas para crear platos que son tanto nutritivos como deliciosos. Su enfoque sostenible atrae a comensales conscientes del medio ambiente."}'></include>
+        </div>
+    </div>
+    <include src="./views/footer.html"></include>
+    <script src="assets/scripts/main.js"></script>
+</body>
+</html>
